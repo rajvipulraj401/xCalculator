@@ -35,9 +35,10 @@ const App = () => {
           <input type="text" value={displayValue} readOnly />
         </div>
 
-        <div className="output-display">
+        {/* <div className="output-display">
           <input type="text" value={displayOutput} readOnly />
-        </div>
+        </div> */}
+        <div className="output-display">{displayOutput}</div>
 
         <div className="buttons-container">
           <button onClick={handleClick} className="btn">
