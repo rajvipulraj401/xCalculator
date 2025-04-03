@@ -95,9 +95,24 @@ const App = () => {
             /
           </button>
         </div>
-      </div>
 
-      <div></div>
+        {/* Below a way where we make all the buttons as array and then map and create a button */}
+        {/* <div className="buttons-container">
+          {["7", "8", "9", "+", "4", "5", "6", "-", "1", "2", "3", "*", "C", "0", "=", "/"].map(
+            (char) => (
+              <button
+                key={char}
+                onClick={
+                  char === "=" ? handleCalculate : char === "C" ? handleClear : handleClick
+                }
+                className="btn"
+              >
+                {char}
+              </button>
+            )
+          )}
+        </div> */}
+      </div>
     </div>
   );
 };
