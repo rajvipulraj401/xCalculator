@@ -20,9 +20,14 @@ const App = () => {
   };
   const handleCalculate = (event) => {
     // console.log(displayValue);
-    let result = eval(displayValue);
-    // setDisplayValue("");
-    setDisplayOutput(result);
+    if (displayValue.length < 1) {
+      setDisplayOutput("Error");
+      // return;
+    } else {
+      let result = eval(displayValue);
+      // setDisplayValue("");
+      setDisplayOutput(result);
+    }
   };
   return (
     <div className="calculator">
